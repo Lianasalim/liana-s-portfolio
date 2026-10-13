@@ -113,9 +113,9 @@ export const featuredProjects: Project[] = [
       "Findings published at the International Conference on Artificial Intelligence & Machine Learning (Bharata Mata College, 2025).",
     tech: ["Python", "scikit-learn", "Classification", "Model Evaluation"],
     link: {
-      label: "Read the paper (DOI)",
-      href: "https://doi.org/10.62643/ijerst.2025.v21.i2.p119-123",
-    },
+  label: "View publication on ResearchGate",
+  href: "https://www.researchgate.net/publication/389284611_A_Comprehensive_Analysis_of_Heart_Disease_Prediction_Using_Various_Machine_Learning_Algorithms",
+},
   },
   {
     title: "LLM & AI Agent Evaluation Pipelines",
