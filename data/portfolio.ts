@@ -171,7 +171,7 @@ export const research = {
       summary:
         "Comparative evaluation of machine learning classification models for predictive healthcare analytics using clinical datasets.",
       keywords: ["Heart disease", "Machine learning", "Classification"],
-      href: "https://doi.org/10.62643/ijerst.2025.v21.i2.p119-123",
+      href: "https://www.researchgate.net/publication/389284611_A_Comprehensive_Analysis_of_Heart_Disease_Prediction_Using_Various_Machine_Learning_Algorithms",
     },
     {
       title: "Hybrid AI System for Urban Emission Policy: Clustering and LSTM Forecasting",
