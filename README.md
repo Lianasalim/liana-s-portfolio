@@ -1,11 +1,12 @@
 # Liana S — AI / ML Portfolio
 
-A responsive, recruiter-friendly portfolio for an AI / ML engineer focused on Generative AI and LLM evaluation. Built with Next.js (App Router) and Tailwind CSS. All content comes from the candidate's résumé and LinkedIn profile.
+A responsive, recruiter-friendly portfolio for a data scientist and ML researcher, covering data science, AI/ML and research roles. Built with Next.js (App Router) and Tailwind CSS. All content comes from the candidate's résumé and LinkedIn profile.
 
 ## Overview
 
 - **Hero** with name, title, positioning statement and CTAs
-- **Featured projects** (Problem / Solution / Contribution / Outcome), plus a short "more projects" list
+- **Featured projects** (Problem / Solution / Contribution / Outcome, with key results), plus a short "more projects" list
+- **Research & publications** (published, submitted and manuscript papers)
 - **Experience** timeline, **About**, grouped **Skills**
 - **Education, certifications & publication**
 - **Contact** (email, phone, LinkedIn, GitHub)
@@ -37,9 +38,10 @@ Everything lives in **`data/portfolio.ts`**:
 | About text and highlight tiles | `about` |
 | Featured projects (add `link` for repo/demo URLs) | `featuredProjects` |
 | Smaller projects | `moreProjects` |
+| Research interests and papers | `research` |
 | Work history (add an end date to `period` as needed) | `experience` |
 | Skill groups | `skills` |
-| Degree, certifications, publication | `education`, `certifications`, `publication` |
+| Degree, certifications, publication | `education`, `certifications` |
 
 - Replace the résumé by overwriting `public/Liana_S_Resume.docx` (or change `profile.resume`).
 - Colours are CSS variables in `app/globals.css` (`--accent`, `--bg`, …) for both light and dark themes.

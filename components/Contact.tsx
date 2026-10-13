@@ -7,10 +7,10 @@ const item = "flex items-center gap-3 rounded-xl border border-line bg-card p-4 
 
 export default function Contact() {
   return (
-    <Section id="contact" eyebrow="Contact" title="Let's talk about AI / ML roles">
+    <Section id="contact" eyebrow="Contact" title="Let's talk about data science, AI/ML and research roles">
       <Reveal>
         <p className="max-w-xl text-lg leading-relaxed text-muted">
-          I'm looking for opportunities building and evaluating AI systems. The quickest way to reach me is email.
+          I'm looking for opportunities in data science, machine learning and research. The quickest way to reach me is email.
         </p>
         <a href={`mailto:${profile.email}`} className="mt-6 inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-medium text-bg transition hover:opacity-90">
           <Mail /> {profile.email}

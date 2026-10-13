@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 function Row({ k, v }: { k: string; v: string | string[] }) {
   const items = Array.isArray(v) ? v : [v];
   return (
-    <div className="sm:grid sm:grid-cols-[9rem_1fr] sm:gap-x-2">
+    <div className="sm:grid sm:grid-cols-[6.5rem_1fr] sm:gap-x-2">
       <span className="text-muted">{k}:</span>
       <span className="flex flex-wrap gap-x-2 text-accent">
         {items.map((item) => (
@@ -15,7 +15,6 @@ function Row({ k, v }: { k: string; v: string | string[] }) {
     </div>
   );
 }
-
 
 export default function Hero() {
   return (
@@ -36,8 +35,8 @@ export default function Hero() {
             <a href={profile.resume} download className="inline-flex items-center gap-2 rounded-lg border border-line px-5 py-2.5 text-sm font-medium transition hover:border-accent hover:text-accent">
               Résumé <Download />
             </a>
-            <a href="#contact" className="inline-flex items-center rounded-lg px-3 py-2.5 text-sm text-muted transition hover:text-fg">
-              Get in touch
+            <a href="#research" className="inline-flex items-center rounded-lg px-3 py-2.5 text-sm text-muted transition hover:text-fg">
+              Research
             </a>
           </div>
         </Reveal>
@@ -52,9 +51,9 @@ export default function Hero() {
             </div>
             <div className="space-y-2 p-5 font-mono text-[13px] leading-relaxed">
               <Row k="focus" v={snapshot.focus} />
-              <Row k="evaluates_with" v={snapshot.evaluates_with} />
+              <Row k="research" v={snapshot.research} />
               <Row k="builds_with" v={snapshot.builds_with} />
-              <Row k="published" v={snapshot.published} />
+              <Row k="papers" v={snapshot.papers} />
               <Row k="status" v={snapshot.status} />
             </div>
           </div>

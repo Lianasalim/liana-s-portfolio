@@ -16,6 +16,16 @@ export default function FeaturedProjects() {
                 {p.status && <span className="rounded-full border border-line px-2.5 py-0.5 font-mono text-[11px] text-muted">{p.status}</span>}
               </div>
               <h3 className="mt-3 text-xl font-semibold tracking-tight">{p.title}</h3>
+              {p.metrics && (
+                <ul className="mt-4 grid grid-cols-2 gap-2">
+                  {p.metrics.map((m) => (
+                    <li key={m.label} className="rounded-lg border border-line bg-bg px-3 py-2">
+                      <p className="font-mono text-base font-semibold text-accent">{m.value}</p>
+                      <p className="text-[11px] text-muted">{m.label}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <dl className="mt-5 space-y-3 text-sm leading-relaxed">
                 {([["Problem", p.problem], ["Solution", p.solution], ["My contribution", p.contribution], ["Outcome", p.outcome]] as const).map(([k, v]) => (
                   <div key={k}>
@@ -37,7 +47,7 @@ export default function FeaturedProjects() {
 
       <Reveal className="mt-14">
         <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-muted">More projects</h3>
-        <div className="mt-4 grid gap-4 md:grid-cols-3">
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
           {moreProjects.map((m) => (
             <div key={m.title} className="rounded-xl border border-line p-5 transition hover:border-accent">
               <h4 className="font-medium">{m.title}</h4>

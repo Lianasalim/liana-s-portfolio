@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <Section id="about" eyebrow="About" title="Building AI that gets measured, not just demoed">
+    <Section id="about" eyebrow="About" title="Evidence-driven data science and machine learning">
       <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
         <Reveal className="space-y-5 text-base leading-relaxed text-muted sm:text-lg">
           {about.paragraphs.map((p) => (<p key={p}>{p}</p>))}
