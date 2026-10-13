@@ -44,7 +44,7 @@ export const snapshot = {
   focus: ["Predictive modelling", "Statistical analysis", "LLM evaluation"],
   research: ["Women's health analytics", "Urban air quality"],
   builds_with: ["Python", "scikit-learn", "TensorFlow"],
-  papers: "1 published · 1 submitted · 1 manuscript",
+  papers: "1 published · 3 submitted · 1 manuscript",
   status: profile.availability,
 };
 
@@ -56,7 +56,7 @@ export const about = {
   ],
   languages: "English (fluent) · Malayalam (native)",
   highlights: [
-    { label: "Research", detail: "1 published, 1 submitted, 1 manuscript" },
+    { label: "Research", detail: "1 published, 3 submitted, 1 manuscript" },
     { label: "LLM & agent evaluation", detail: "DeepEval · TruLens · LangSmith" },
     { label: "ISRO IISU", detail: "Data analyst intern" },
     { label: "University rank 7th", detail: "Integrated MSc, MG University" },
@@ -181,6 +181,22 @@ export const research = {
         "Integrates a driver-habits survey with AQI time-series data. K-Means builds driver risk profiles and an LSTM forecasts daily AQI (R² = 0.73), supporting a targeted enforcement strategy.",
       keywords: ["AQI", "LSTM", "K-Means", "Targeted enforcement", "Vehicular emissions"],
     },
+{
+  title: "Cross Comparison Study of Chest X-ray Images for Automated Detection of Pneumonia Using Deep Learning Techniques",
+  status: "Submitted",
+  venue: "Manuscript submission",
+  summary:
+    "A comparative study of deep learning techniques for automated pneumonia detection using chest X-ray images.",
+  keywords: ["Pneumonia detection", "Chest X-ray", "Deep learning", "Medical imaging"],
+},
+{
+  title: "Analysis of Climate Change and Global Warming Using Statistical Methods and Visualization Tools",
+  status: "Submitted · ICDSIS 2027",
+  venue: "ICDSIS 2027",
+  summary:
+    "An analysis of climate change and global warming using statistical methods and data visualization tools.",
+  keywords: ["Climate change", "Global warming", "Statistical analysis", "Data visualization"],
+},
     {
       title: "A Data-Driven Framework for Assessing Vitamin Deficiencies and Hormonal Health in Women",
       status: "Manuscript",
