@@ -41,14 +41,16 @@ export default function Hero() {
           <div className="mx-auto w-full max-w-[260px]">
             <div className="overflow-hidden rounded-2xl border border-line bg-card p-2 shadow-lg">
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-neutral-200">
-                <Image
-                  src="/liana-portfolio.png"
-                  alt="Liana S — professional portfolio portrait"
-                  fill
-                  priority
-                  sizes="(max-width: 1023px) 85vw, 260px"
-                  className="object-cover object-center"
-                />
+                
+<Image
+  src={`${process.env.NODE_ENV === "production" ? "/liana-s-portfolio" : ""}/liana-portfolio.png`}
+  alt="Liana S — professional portfolio portrait"
+  fill
+  priority
+  unoptimized
+  sizes="(max-width: 1024px) 85vw, 260px"
+  className="object-cover object-center"
+/>
               </div>
             </div>
           </div>
