@@ -43,7 +43,7 @@ export default function Hero() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-neutral-200">
                 
 <Image
-  src={`${process.env.NODE_ENV === "production" ? "/liana-s-portfolio" : ""}/liana-portfolio.png`}
+  src={`${process.env.NODE_ENV === "production" ? "/liana-s-portfolio" : ""}/liana-portfolio.jpeg`}
   alt="Liana S — professional portfolio portrait"
   fill
   priority
